@@ -13,15 +13,15 @@ Observations: All the models seem to converge somewhere. But Hosts are significa
 
 Charts: the loss and the rhos ([host_net, RandomHost] vs [agent_net, RandomAgent], every 1000 step)
 
-!(img/loss1.png)
+![](img/loss1.png)
 
-!(img/loss2.png)
+![](img/loss2.png)
 
-!(img/rhos1.png)
+![](img/rhos1.png)
 
-!(img/rhos2.png)
+![](img/rhos2.png)
 
-!(img/rhos3.png)
+![](img/rhos3.png)
 
-!(img/rhos4.png)
+![](img/rhos4.png)
 
