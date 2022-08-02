@@ -5,13 +5,19 @@ This is the first attempt of a mass scale training. We only trained the [origina
 
 **Code:** [v0.py](v0.py)
 
-**Metrics:** As introduced in [the main repo](https://github.com/honglu2875/hironaka), the quantity $\rho$ is a good measurement of relative strength between host and agent. We measure $\rho$ of (host_net, agent_net), (host_net, RandomAgent), (agent_net, RandomHost), (RandomHost, RandomAgent) every 1000 steps as well as in the end. (The last pair (RandomHost, RandomAgent) only served as a sanity test. It should be a constant depending on the dimension and max number of points.)
+**Metrics:** As introduced in [the main repo](https://github.com/honglu2875/hironaka), the quantity $\rho$ is a good measurement of relative strength between host and agent. We measure $\rho$ of 
+- (host_net, agent_net), 
+- (host_net, RandomAgent), 
+- (agent_net, RandomHost), 
+- (RandomHost, RandomAgent)
 
-**Method:** DQN (from DQNTrainer whose core logic is exactly the same as DQN from stable-baseline3). We train the pair of host and agent simultaneously for 10 steps, generate new experiences and rinse-and-repeat. 
+every 1000 steps as well as in the end. (The last pair (RandomHost, RandomAgent) only served as a sanity test. It should be a constant depending only on the dimension and max number of points.)
 
-It is known and easily observed that since the metric is only relative with respect to the pair (host, agent), the dynamics make them develop their own preferences that cannot be generalized (as well as go, chess, etc.). For every config script, we train 8 pairs of (host, agent) in parallel with randomized initialization.
+**Method:** DQN (from `DQNTrainer` whose core logic is exactly the same as `DQN` from `stable-baseline3`). We train the pair of host and agent simultaneously for 10 steps, generate new experiences and rinse-and-repeat. 
 
-A proper algorithm might also include model selection by evaluating players across different pairs. This is not dealt with in the current experiment. Challenges include experiment design and GPU sync.
+It is well-known and easily observed that, since the metric is only relative with respect to the pair (host, agent), they develop their own preferences that do not generalize (as well as go, chess, etc.). As a result, the (host, agent) pair develops some kind of equilibrium and stops improving (converged). For every config script, we train 8 pairs of (host, agent) in parallel with randomized initialization and watch their behaviors.
+
+To break out of the equilibrium, a proper algorithm should also include model selection by evaluating players across different pairs. This is not dealt with in the current experiment. Challenges include experiment design and GPU sync.
 
 **Observations:** All the models seem to converge somewhere. But Hosts are significantly weaker than Agents. Agents have certain amount of generalizability when compared with other strategies (including RandomHost), but Host does not at all. 
 
