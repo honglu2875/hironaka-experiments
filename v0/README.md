@@ -3,7 +3,7 @@ This is the first attempt of a mass scale training. We only trained the [origina
 
 10-dim models have gigantic amount of logs so we omit them.
 
-**Code:** [v0.py](v1.py)
+**Code:** [v0.py](v0.py)
 
 **Metrics:** As introduced in [the main repo](https://github.com/honglu2875/hironaka), the quantity $\rho$ is a good measurement of relative strength between host and agent. We measure $\rho$ of (host_net, agent_net), (host_net, RandomAgent), (agent_net, RandomHost), (RandomHost, RandomAgent) every 1000 steps as well as in the end. (The last pair (RandomHost, RandomAgent) only served as a sanity test. It should be a constant depending on the dimension and max number of points.)
 
