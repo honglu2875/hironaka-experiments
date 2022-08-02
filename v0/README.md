@@ -17,11 +17,11 @@ Charts: the loss and the rhos ([host_net, RandomHost] vs [agent_net, RandomAgent
 
 ![](img/loss2.png)
 
-![](img/rhos1.png)
+![](img/rho1.png)
 
-![](img/rhos2.png)
+![](img/rho2.png)
 
-![](img/rhos3.png)
+![](img/rho3.png)
 
-![](img/rhos4.png)
+![](img/rho4.png)
 
