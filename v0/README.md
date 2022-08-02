@@ -21,7 +21,7 @@ To break out of the equilibrium, a proper algorithm should also include model se
 
 **Observations:** All the models seem to converge somewhere. But Hosts are significantly weaker than Agents. Agents have certain amount of generalizability when compared with other strategies (including RandomHost), but Host does not at all. 
 
-**Charts:** the loss and the rhos ([host_net, RandomHost] vs [agent_net, RandomAgent], every 1000 step)
+**Charts:** the loss (`host_net` and `agent_net`) and the $\rho$ (`[host_net, RandomHost]` vs `[agent_net, RandomAgent]`, every 1000 step)
 
 ![](img/loss1.png)
 
