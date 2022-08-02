@@ -1,5 +1,5 @@
 # first batch of v0 models
-This is the first attempt of a mass scale training. We only trained the [original small model](trainer_cfg_small.yml) (twice due to cluster interruption) and [10-rollout model](trainercfg_v0-10-rollout.yml) (twice due to cluster interruption), plus a [huge one](trainer_cfg_v0-huge.yml) which is 10-dimensional with 100 points. The result is less than ideal. But it marks a first systematic attempt of training.
+This is the first attempt of a mass scale training. We only trained the [original small model](trainer_cfg_small.yml) (twice due to cluster interruption) and [10-rollout model](trainer_cfg_v0-10-rollout.yml) (twice due to cluster interruption), plus a [huge one](trainer_cfg_v0-huge.yml) which is 10-dimensional with 100 points. The result is less than ideal. But it marks a first systematic attempt of training.
 
 10-dim models have gigantic amount of logs so we omit them.
 
