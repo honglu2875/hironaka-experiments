@@ -11,7 +11,7 @@ This is the first attempt of a mass scale training. We only trained the [origina
 
 It is known and easily observed that since the metric is only relative with respect to the pair (host, agent), the dynamics make them develop their own preferences that cannot be generalized (as well as go, chess, etc.). For every config script, we train 8 pairs of (host, agent) in parallel with randomized initialization.
 
-A proper algorithm might also model selection by evaluating players across different pairs. This is not dealt with in the current experiment. Challenges include experiment design and GPU sync.
+A proper algorithm might also include model selection by evaluating players across different pairs. This is not dealt with in the current experiment. Challenges include experiment design and GPU sync.
 
 **Observations:** All the models seem to converge somewhere. But Hosts are significantly weaker than Agents. Agents have certain amount of generalizability when compared with other strategies (including RandomHost), but Host does not at all. 
 
