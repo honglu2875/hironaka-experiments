@@ -62,12 +62,12 @@ Zeillinger vs RandomAgent
 ## Pictures
 
 ### Loss
-[loss](loss.png)
-[rhos](rhos.png)
+![loss](loss.png)
+![rhos](rhos.png)
 
 A few layer weight info (first a few and last a few):
-[wt1](layer_weight_samples1.png)
-[wt2](layer_weight_samples2.png)
-[wt3](layer_weight_samples3.png)
+![wt1](layer_weight_samples1.png)
+![wt2](layer_weight_samples2.png)
+![wt3](layer_weight_samples3.png)
 
 
