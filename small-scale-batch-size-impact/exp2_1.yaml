@@ -1,0 +1,67 @@
+agent:
+  batch_size: 256
+  er: 0.2
+  er_schedule:
+    initial_er: 1
+    mode: exponential
+    rate: 0.999
+  gamma: 0.9
+  initial_rollout_size: 100
+  max_rollout_step: 20
+  net_arch:
+  - net_arch:
+    - r256
+    repeat: 10
+  optim:
+    args:
+      lr: 1.0e-08
+    lr_schedule:
+      initial_lr: 0.01
+      mode: exponential
+      rate: 0.999
+    name: adam
+  rollout_size: 20
+  steps_before_rollout: 400
+  steps_before_update_target: 1000
+  tau: 1
+dimension: 3
+host:
+  batch_size: 512
+  er: 0.2
+  er_schedule:
+    initial_er: 1
+    mode: exponential
+    rate: 0.999
+  gamma: 0.9
+  initial_rollout_size: 100
+  max_rollout_step: 20
+  net_arch:
+  - net_arch:
+    - r256
+    repeat: 2
+  optim:
+    args:
+      lr: 1.0e-05
+    lr: 1.0e-08
+    lr_schedule:
+      initial_lr: 0.01
+      mode: inverse
+      rate: 1.0
+    name: adam
+  rollout_size: 20
+  steps_before_rollout: 400
+  steps_before_update_target: 1000
+  tau: 1
+layerwise_logging: true
+log_time: false
+max_grad_norm: 1
+max_num_points: 20
+max_value: 20
+replay_buffer:
+  buffer_size: 100000
+  type: base
+  use_cuda: true
+scale_observation: true
+use_cuda: true
+use_tensorboard: true
+version_string: small_scale_v0
