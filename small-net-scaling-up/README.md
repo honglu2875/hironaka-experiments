@@ -3,18 +3,23 @@
 In this experiment, I started with 2 layers of residue net where each residue block is like the following
 ```
 (2): ResidualBlock(
-    (lin1): Linear(in_features=60, out_features=256, bias=True)
+    (lin1): Linear(in_features=256, out_features=256, bias=True)
     (bn1): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
     (relu): ReLU(inplace=True)
     (lin2): Linear(in_features=256, out_features=256, bias=True)
     (bn2): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-    (down_sample): Sequential(
+  )
+```
+
+The first residue block has a down-sampling layer (actually up-sampling for the name's sake) to match the output size.
+```
+(down_sample): Sequential(
       (0): Linear(in_features=60, out_features=256, bias=True)
       (1): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
     )
-  )
 ```
-and I scaled up gradually to 10 layers. For each network architecture I tried 3 different batch sizes: 256, 1024, 8192.
+
+I scaled up gradually to 10 layers. For each network architecture I tried 3 different batch sizes: 256, 1024, 8192.
 
 **Warning**: Every set-up was only run once due to resources restrictions. Models may be sensitive to random seeds and conclusions need to be drawn with care across multiple set-ups.
 
