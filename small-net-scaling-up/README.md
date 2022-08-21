@@ -16,6 +16,8 @@ In this experiment, I started with 2 layers of residue net where each residue bl
 ```
 and I scaled up gradually to 10 layers. For each network architecture I tried 3 different batch sizes: 256, 1024, 8192.
 
+**Warning**: Every set-up was only run once due to resources restrictions. Models may be sensitive to random seeds and conclusions need to be drawn with care across multiple set-ups.
+
 # 2 layer:
 Loss:
 
