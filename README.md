@@ -6,3 +6,5 @@ This repo documents presentable experiments in the Reinforcement Learning traini
 [Small scale, against choosefirst v0](small-scale-against-choosefirst-v0)
 
 [Small scale with varying batch sizes](small-scale-batch-size-impact)
+
+[Scaling up small nets](small-net-scaling-up)
