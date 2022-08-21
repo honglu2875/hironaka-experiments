@@ -4,3 +4,5 @@ This repo documents presentable experiments in the Reinforcement Learning traini
 [first batch of a prototype v0](v0)
 
 [Small scale, against choosefirst v0](small-scale-against-choosefirst-v0)
+
+[Small scale with varying batch sizes](small-scale-against-choosefirst-v0)
