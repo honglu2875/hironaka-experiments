@@ -21,6 +21,9 @@ The first residue block has a down-sampling layer (actually up-sampling for the 
 
 I scaled up gradually to 10 layers. For each network architecture I tried 3 different batch sizes: 256, 1024, 8192.
 
+# Take away:
+- The sweet spot of batch size seems to be 256. I think the reason was that perhaps sample with repeating data (bootstraping) is harmful. For higher batch sizes, the replay buffer does not have enough data points (initial rollout 100 x max step 20). In the extreme case, when batch size is 8196, which is more than the initial sample (< 2000). The roll out happens in average 1 per step (400 step delay, 20 games x 20 steps) which is also slow. Higher batch size might work, but higher rollout will be necessary.
+
 **Warning**: Every set-up was only run once due to resources restrictions. Models may be sensitive to random seeds and conclusions need to be drawn with care across multiple set-ups.
 
 # 2 layer:
