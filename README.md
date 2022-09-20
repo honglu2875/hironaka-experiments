@@ -8,3 +8,5 @@ This repo documents presentable experiments in the Reinforcement Learning traini
 [Small scale with varying batch sizes](small-scale-batch-size-impact)
 
 [Scaling up small nets](small-net-scaling-up)
+
+[AlphaZero style RL](hironaka-zero-beta)
