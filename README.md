@@ -10,3 +10,5 @@ This repo documents presentable experiments in the Reinforcement Learning traini
 [Scaling up small nets](small-net-scaling-up)
 
 [AlphaZero style RL](hironaka-zero-beta)
+
+[The blowup tree of E8 surface singularity using Zeillinger policy](zeillinger-e8.png)
