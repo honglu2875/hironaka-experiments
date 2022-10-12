@@ -63,7 +63,11 @@ A3. Optimal
 ### A4
 ![A4](0.14-model/A4.png)
 
-A4. Sadly the first choice was wrong. After the first blowup from $[[2,0,0], [0,2,0], [0,0,5]]$ to $[[2,0,2], [0,2,0], [0,0,5]]$, the A4 singularity did not improve at all (as they are locally isomorphic!). But starting from $[[2,0,0], [0,2,0], [0,0,5]]$ onwards, the solution is optimal and we get exactly the Dynkin diagram of A4. 
+A4. Sadly the first choice was wrong. After the first blowup from $[[2,0,0], [0,2,0], [0,0,5]]$ to $[[2,0,2], [0,2,0], [0,0,5]]$, the A4 singularity did not improve at all (as they are locally isomorphic!). 
+
+**Interesting question**: what is the singularity of $[[2,0,2], [0,2,0], [0,0,5]]$? 
+
+From this step onwards, the tree does have the feeling of an optimal resolution but I am not sure.
 
 ### D4
 ![D4](0.14-model/D4.png)
