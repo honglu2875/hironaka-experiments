@@ -53,7 +53,7 @@ I emphasize that **the trees contain a lot of redundancy**, as I did not bake th
 ### A2
 ![A2](0.14-model/A2.png)
 
-A2. Optimal. In fact ((1, 0, 0), (0, 0, 1)) was already smooth, but under our game it was not. Of course one could bake this into the rule of the game, but resolving the game from states like this seems to be easy enough. 
+A2. Optimal. In fact $[[1, 0, 0], [0, 0, 1]]$ was already smooth, but under our game it was not. Of course one could bake this into the rule of the game, but resolving the game from states like this seems to be easy enough. 
 
 ### A3
 ![A3](0.14-model/A3.png)
@@ -63,12 +63,12 @@ A3. Optimal
 ### A4
 ![A4](0.14-model/A4.png)
 
-A4. Sadly the first choice was wrong. But the game did resolve within 10 blow-ups.
+A4. Sadly the first choice was wrong. After the first blowup from $[[2,0,0], [0,2,0], [0,0,5]]$ to $[[2,0,2], [0,2,0], [0,0,5]]$, the A4 singularity did not improve at all (as they are locally isomorphic!). But starting from $[[2,0,0], [0,2,0], [0,0,5]]$ onwards, the solution is optimal and we get exactly the Dynkin diagram of A4. 
 
 ### D4
 ![D4](0.14-model/D4.png)
 
-D4. Optimal. One get exactly the D4 Dynkin diagram from this tree (though not immediately obvious).
+D4. Optimal. One gets exactly the D4 Dynkin diagram from this tree (though not immediately obvious).
 Note that any occurence of $(x_1, x_2, x_3)$ where $x_1+x_2+x_3=1$ is already a smooth point, despite the game not being terminate. We could tweak that in a later version.
 
 Note that the last blowup (from $[[1,0,1], [0,2,0], [0,0,2]]$) in fact separates three lines intersecting at the singularity, thus achieving the final look of D4 Dynkin diagram.
