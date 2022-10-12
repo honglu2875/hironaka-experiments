@@ -12,3 +12,5 @@ This repo documents presentable experiments in the Reinforcement Learning traini
 [AlphaZero style RL](hironaka-zero-beta)
 
 [The blowup tree of E8 surface singularity using Zeillinger policy](zeillinger-e8.png)
+
+[Blowup trees of some checkpoints of AlphaZero agents](5x3-surface-singularities)
