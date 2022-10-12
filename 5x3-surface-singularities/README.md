@@ -1,11 +1,11 @@
-# some checkpoints (without fine-tuning/small-scale)
+# Some checkpoint results (without fine-tuning/small-scale)
 Here are the blowup trees given by a couple trained agents. But the hyperparameters are not fine-tuned and they are very small scale.
 
 Recall that each integral point corresponds to a monomial, and we are considering the hypersurface defined by the sum of the monomial. For example, an initial state of $[[2,0,0], [0,2,0], [0,0,3]]$ corresponds to
 
 $$x^2+y^2+z^3=0$$.
 
-Feel free to check out the [best model](#model-with-0.14-score-against-choose-first/choose-last). The rules of games are changed slightly (reposition the points after making the coordinate changes, so that we disregard the exceptional divisors). There are a lot of game states (existence of one of $[1, 0, 0], [0, 1, 0], [0, 0, 1]$ in the game state already implies smoothness). Thus, the trees contain a lot of redundancy.
+Feel free to check out the [best model](#model-with-0.14-score-against-choose-first/choose-last). The rules of games are changed slightly (reposition the points after making the coordinate changes, so that we disregard the exceptional divisors). There are a lot of game states (existence of one of $[1, 0, 0], [0, 1, 0], [0, 0, 1]$ in the game state already implies smoothness). Thus, **the trees contain a lot of redundancy**.
 
 
 ## model with 0.1 score against choose-first/choose-last
