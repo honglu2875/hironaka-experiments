@@ -1,4 +1,4 @@
-# Some checkpoint results (without fine-tuning/small-scale)
+# Some checkpoint results (without fine-tuning, small-scale with max 5 points)
 Here are the blowup trees given by a couple trained agents. But the hyperparameters are not fine-tuned and they are very small scale.
 
 Recall that each integral point corresponds to a monomial, and we are considering the hypersurface defined by the sum of the monomial. For example, an initial state of $[[2,0,0], [0,2,0], [0,0,3]]$ corresponds to
