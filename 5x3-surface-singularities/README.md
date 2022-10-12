@@ -5,7 +5,7 @@ Recall that each integral point corresponds to a monomial, and we are considerin
 
 $$x^2+y^2+z^3=0$$.
 
-Feel free to check out the [best model](#0.14). The rules of games are changed slightly (reposition the points after making the coordinate changes, so that we disregard the exceptional divisors). There are a lot of game states (existence of one of $[1, 0, 0], [0, 1, 0], [0, 0, 1]$ in the game state already implies smoothness). Thus, **the trees contain a lot of redundancy**.
+Feel free to check out the [best model](#model-with-014-score-against-choose-firstchoose-last). The rules of games are changed slightly (reposition the points after making the coordinate changes, so that we disregard the exceptional divisors). There are a lot of game states (existence of one of $[1, 0, 0], [0, 1, 0], [0, 0, 1]$ in the game state already implies smoothness). Thus, **the trees contain a lot of redundancy**.
 
 
 ## model with 0.1 score against choose-first/choose-last
@@ -42,7 +42,7 @@ A nice resolution for E6.
 ### E7 and E8
 [E7](0.1-model/E7.png) and [E8](0.1-model/E8.png) did not end up terminating.
 
-## [model with 0.14 score against choose-first/choose-last][0.14]
+## model with 0.14 score against choose-first/choose-last
 Now in this case, we turned on `reposition`. After shifting, each coordinates will be translated so that at least one point touches the coordinate planes (the coordinate equals to zero).
 
 In resolution, it is equivalent to the fact that we throw away the exceptional divisor, and only look at the strict transform (and make sure it is smoothed).
