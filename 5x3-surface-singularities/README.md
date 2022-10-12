@@ -68,12 +68,15 @@ A4. Sadly the first choice was wrong. But the game did resolve within 10 blow-up
 ### D4
 ![D4](0.14-model/D4.png)
 
-D4. Seems to be optimal. Note that any occurence of $(x_1, x_2, x_3)$ where $x_1+x_2+x_3=1$ is already a smooth point, despite the game not being terminate. We could tweak that in a later version.
+D4. Optimal. One get exactly the D4 Dynkin diagram from this tree (though not immediately obvious).
+Note that any occurence of $(x_1, x_2, x_3)$ where $x_1+x_2+x_3=1$ is already a smooth point, despite the game not being terminate. We could tweak that in a later version.
+
+Note that the last blowup (from $[[1,0,1], [0,2,0], [0,0,2]]$) in fact separates three lines intersecting at the singularity, thus achieving the final look of D4 Dynkin diagram.
 
 ### D5
 ![D5](0.14-model/D5.png)
 
-D5. Haven't checked. But again, most of the game states are in fact already smooth. It might be or at least very close to the Dynkin diagram.
+D5. Almost optimal. From the state $[[2,0,0], [0,1,1], [0,0,2]]$, it would have obtained the D5 Dynkin diagram had the host chose all the coordinates $(0,1,2)$.
 
 ### E6
 ![E6](0.14-model/E6.png)
