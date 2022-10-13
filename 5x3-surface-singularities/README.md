@@ -8,7 +8,7 @@ $$x^2+y^2+z^3=0$$.
 Feel free to check out the [best model](#model-with-014-score-against-choose-firstchoose-last). The rules of games are changed slightly (reposition the points after making the coordinate changes, so that we disregard the exceptional divisors). There are a lot of game states (existence of one of $[1, 0, 0], [0, 1, 0], [0, 0, 1]$ in the game state already implies smoothness). Thus, **the trees contain a lot of redundancy**.
 
 # An example of the interpretation of the blowup tree
-Let us take [D4](#d4-1) as an example. This resolution is the optimal gameplay for host, and it corresponds to the (unique) minimal resolution of D4 singularity:
+Let us take [D4](#d4-1) as an example. This resolution is one of the optimal gameplays for host, and it corresponds to the (unique) minimal resolution of D4 singularity (but not unique as an embedded resolution in $\mathbb A^3$):
 
 $$x^2+y^2z+z^3=0.$$
 
