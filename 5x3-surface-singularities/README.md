@@ -18,6 +18,7 @@ Notice that the game initial state $[[2,0,0], [0,2,1], [0,0,3]]$ correspond to t
 The host chose the coordinates $[0, 2]$ as the first step, which corresponds to blowing up the line defined by $x=z=0$. The resulting surface is no longer an affine surface, and to look at the whole picture, one must try to observe through two different charts (think about atlas, charts in manifold theory):
 - $(u,v,w)$ through the change of variables $u=x, v=y, uw=z$.
 - $(u',v',w')$ through $u'w'=x, v'=y, w'=z$.
+- 
 Choosing any chart corresponds to an agent action. And the change of variables corresponds to the linear transformations of the game states when looking at the exponents. This step is particularly surprising for me at a first glance, as the usual approach is to blow up $x=y=z=0$ (e.g., the first chart would be $u=x, uv=y, uw=z$, etc). But turns out it doesn't hurt the result.
 
 A smart agent should choose the second chart, as the origin of the first chart is a already smooth point. Let us check this statement by hand: Plugging in $u=x, v=y, uw=z$, we obtain 
